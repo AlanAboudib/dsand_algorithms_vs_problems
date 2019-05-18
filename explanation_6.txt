@@ -1,0 +1,12 @@
+PROBLEM 6: Explanation
+----------------------
+
+It is easy to compute the min and max of an unsorted array in a single traversal O(n)
+
+We intialize two variables that hold the min and max values
+
+then we take each element from the array and we update the 'min' variable by
+assigning the list element to it if the latter is lower. 
+
+We do the same for the 'max' variable by checking out if the list element we
+took is higher and then assigning it to the 'max' variable if it is the case.

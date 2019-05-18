@@ -1,0 +1,13 @@
+PROBLEM 4: Explanation
+----------------------
+
+The solution to this problem in O(n) is so simple.
+
+Since we know that only 0s, 1s and 2s are allowed in the list to be sorted,
+we can just traverse this list one time and take each element and put it in 
+a separate list: so we put all zeros in one list, ones in another and twos
+in a third list.
+
+At the end we simple concatenate the three lists:
+
+[0,0,.] concat [1,1,...] concat [2,2,...]

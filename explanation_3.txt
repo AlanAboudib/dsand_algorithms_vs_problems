@@ -1,0 +1,17 @@
+PROBLEM 3: Explanation
+----------------------
+
+The program takes a list of integers in the range [0,9], and rearrange its digits into two integers
+whose sum is maximal. In order to come up with a solution with a time complexity O(n.log(n)), 
+
+I first implement the merge sort algorithm tha thas an average (and worse case) complexities of O(n.log(n)).
+Then, I used the merge sort to sort the input list in ascending order. 
+
+Then, once the list is sorted, for instance [2,4,5,6,7], I iterate in reverse order only one time through
+this list: I first take 7 and put it in a list [7] then I take the 6 and put it in a second list [6],
+then the 5 in the first list [7,5], then the 4 in the second [6,4], etc..
+Iterating this list is O(n).
+
+By concatenating the contents of each list, I obtained the solution as two integers.
+
+the final complexity is O(n + n.log(n)) which is eqal to O(n (1 +log(n))) = O(nlog(n))

@@ -1,0 +1,6 @@
+PROBLEM 5: Explanation
+----------------------
+
+This problem was required to be solved as a jupyter notebook. So please refer
+to problem_5.ipynb and read the markdown and in-code comments for more details on
+my solution

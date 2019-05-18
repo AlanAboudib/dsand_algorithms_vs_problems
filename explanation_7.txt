@@ -1,0 +1,12 @@
+PROBLEM 7: Explanation
+----------------------
+
+This is not a problem about an efficiency and optimized time complexity.
+
+It is about dealing with Trie.
+
+This problem was required to be solved by filling a provided template. So please refer
+to problem_7.py and read the  in-code comments for more details on
+my solution.
+
+

@@ -1,0 +1,13 @@
+Problem 1: Explanation
+----------------------
+I solve this problem by a divide and conquer approach.
+
+I start from the observation that the sqrt for a number > 1 can at most be equal
+to half of the number (sqrt(4) = 2). 
+
+So, I limit my search to the the integers in the interval [0, number /2]
+Within that interval, I apply a binary search with complexity of O(log(n))
+to find the solution using the fact that:
+
+if x > y => sqrt(x) > sqrt(y) for x, y in R+
+

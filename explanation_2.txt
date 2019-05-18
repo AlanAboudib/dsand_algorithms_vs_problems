@@ -1,0 +1,29 @@
+PROBLEM 2: Explanation
+-----------------------
+
+The way I accomplish this element search problem in the rotated sorted list is by
+using a divide-and-conquer approach.
+
+I start from the observation that if I divide a rotated sorted list into two lists
+without any overlapping elements, at least one of the resulting splits would be a
+sorted unrotated list. Here is and example: [5,6,7,8,,9,1,2,3,4]  can be split into
+[5,6,7,8] and [9,1,2,3,4]. the left one is sorted unrotated. The element is necessarily
+in one and only one of these lists. It is easy to know in each split I should search
+by only looking at the unrotated list. If the searched element smaller or equal  the last
+element and larger or equal to first element (in case of ascending order, the inverse for
+descending order), then we should exclude the rotated list and look only in the sorted one.
+Otherwise, we exclude the unrotated one and search only in the rotated part.
+
+For searching in the sorted one, I apply a binary search with complexity of O(log(n)).
+For searching the rotated part, I apply again the rotated/unrotated split recursively.
+
+Since I am  dividing the list by two each time and search in only one half, then I have
+a complexity of O(log(n))
+
+Note:
+
+there are some extreme cases where splitting results in two sorted, unrotated lists 
+( when the whole list is unrotated), my code detects this and performs a binary
+seach on the whole list.
+
+
